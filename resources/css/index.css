@@ -1,0 +1,97 @@
+.body{
+    background-color: rgb(238, 238, 238);
+    color: black;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header{
+    text-align: center;
+    background-color: red;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.mainHeader{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+}
+
+#cardContent{
+    width: 90vw;
+    margin: 0 auto;   
+    padding: 20px 0;
+}
+#filterOuter{
+    background-color: rgb(216, 216, 216);
+    margin-top: 10px;
+}
+
+#filterOptions{
+    width: 88vw;
+    margin: 0 auto;   
+    padding: 2px 0 3px 0;
+}
+
+.filter h6{
+    display: inline;
+}
+
+.filter{
+    padding-right: 10px;
+}
+
+#reset{
+    margin: 10px 0;
+}
+
+#searchOption{
+    margin: 10px 0;
+}
+
+#search{
+    width: 300px;
+}
+
+.img-top{
+    margin-bottom: 20px;
+}
+
+#sort{
+    margin: 10px 0;
+}
+
+.modalText{
+    text-align: center;
+}
+
+.button {
+    background-color: #fc3232;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.infoButton {
+    background-color: rgb(232, 232, 232);
+    border: none;
+    color: black;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.infoButton:hover {
+    background-color: #000000;
+    color: white;
+}

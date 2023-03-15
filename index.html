@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1 Drivers</title>
+    <link rel="stylesheet" href="./resources/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <!-- imported Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+
+<body class="body">
+
+    <!-- page header -->
+    <div id="header">
+        <h1 class="mainHeader">2022 F1 Drivers</h1>
+    </div>
+
+    <!-- filter container -->
+    <div id="filterOuter">
+        <div id="filterOptions">
+            <!-- search option -->
+            <div id="searchOption">
+                <h5>Search</h5>
+                <input type="text" name="" id="search" placeholder="Search By Name, Team or Nationality" />
+                <input class="button" type="button" value="Search" id="searchButton" />
+            </div>
+            <!-- filter option -->
+            <div id="teamFilters">
+                <h5>Filter</h5>
+                <span class="filter">
+                    <h6><b>By Team:</b></h6> <label for="Mercedes">Mercedes</label>
+                    <input type="checkbox" name="team" id="Mercedes" value="Mercedes" />
+                </span>
+
+                <span class="filter">
+                    <label for="RedBull">Red Bull</label>
+                    <input type="checkbox" name="team" id="RedBull" value="Red Bull" />
+                </span>
+
+                <span class="filter">
+                    <label for="Ferrari">Ferrari</label>
+                    <input type="checkbox" name="team" id="Ferrari" value="Ferrari" />
+                </span>
+
+                <span class="filter">
+                    <label for="McLaren">McLaren</label>
+                    <input type="checkbox" name="team" id="McLaren" value="McLaren" />
+                </span>
+
+                <span class="filter">
+                    <label for="AlphaTauri">Alpha Tauri</label>
+                    <input type="checkbox" name="team" id="AlphaTauri" value="Alpha Tauri" />
+                </span>
+
+                <span class="filter">
+                    <label for="Alpine">Alpine</label>
+                    <input type="checkbox" name="team" id="Alpine" value="Alpine" />
+                </span>
+
+                <span class="filter">
+                    <label for="Williams">Williams</label>
+                    <input type="checkbox" name="team" id="Williams" value="Williams" />
+                </span>
+
+                <span class="filter">
+                    <label for="AlfaRomeo">Alfa Romeo</label>
+                    <input type="checkbox" name="team" id="AlfaRomeo" value="Alfa Romeo" />
+                </span>
+
+                <span class="filter">
+                    <label for="AstonMartin">Aston Martin</label>
+                    <input type="checkbox" name="team" id="AstonMartin" value="Aston Martin" />
+                </span>
+
+                <span class="filter">
+                    <label for="Haas">Haas</label>
+                    <input type="checkbox" name="team" id="Haas" value="Haas" />
+                </span>
+            </div>
+            <!-- sort option -->
+            <div id="sort">
+                <h5>Sort</h5>
+                <input class="button" type="button" value="Last Name A-Z" id="azFilter" />
+                <input class="button" type="button" value="Last Name Z-A" id="zaFilter" />
+            </div>
+            <!-- filter/page refresh -->
+            <div id="refresh">
+                <input class="button" type="button" name="" value="Reset Filters" id="reset">
+            </div>
+        </div>
+    </div>
+
+    <!-- card container -->
+    <div class="container-fluid">
+        <div class="row" id="cardContent"></div>
+    </div>
+
+
+
+
+
+
+    <!-- my javascript file -->
+    <script src="./resources/js/data.js"></script>
+</body>
+
+</html>
